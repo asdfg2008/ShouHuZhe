@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_destination"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.crg.tecentdemo.ChooseDestinationActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#00C73A"
+        >
+        <TextView
+            android:id="@+id/headerTitleFragment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="选择目的地" />
+        <Button
+            android:id="@+id/onMyWay_leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:textColor="#FFFFFF"
+            android:text="返回"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/input_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的目的地"/>
+
+    <!--<com.yydcdut.sdlv.SlideAndDragListView-->
+        <!--android:id="@+id/list_suggestAddres"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</com.yydcdut.sdlv.SlideAndDragListView>-->
+    <ListView
+        android:id="@+id/list_suggestAddres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
